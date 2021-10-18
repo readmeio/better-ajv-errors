@@ -2,7 +2,7 @@
 
 ## Reporting a Vulnerability
 
-If there are any vulnerabilities in `oas`, don't hesitate to _report them_.
+If there are any vulnerabilities in `better-ajv-errs`, don't hesitate to _report them_.
 
 Please email security@readme.io and describe what you've found.
 
