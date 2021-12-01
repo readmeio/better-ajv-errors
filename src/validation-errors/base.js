@@ -1,6 +1,6 @@
 import chalk from 'chalk';
 import { codeFrameColumns } from '@babel/code-frame';
-import { getMetaFromPath, getDecoratedDataPath } from '../json';
+import { getMetaFromPath, getDecoratedDataPath } from '../json/index';
 
 export default class BaseValidationError {
   constructor(options = { isIdentifierLocation: false }, { colorize, data, schema, jsonAst, jsonRaw }) {

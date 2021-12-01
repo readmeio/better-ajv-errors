@@ -22,7 +22,11 @@ Array [
 exports[`Main should support js output format for default errors 1`] = `
 Array [
   Object {
-    "end": undefined,
+    "end": Object {
+      "column": 25,
+      "line": 1,
+      "offset": 24,
+    },
     "error": "/id: type must be number",
     "path": "/id",
     "start": Object {
