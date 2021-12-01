@@ -38,8 +38,8 @@ import betterAjvErrors from 'better-ajv-errors';
 // const Ajv = require('ajv');
 // const betterAjvErrors = require('better-ajv-errors');
 
-// If you're on anything less than `ajv@7` you need to pass `jsonPointers: true`
-const ajv = new Ajv({ jsonPointers: true });
+// You need to pass `{ jsonPointers: true }` for older versions of ajv
+const ajv = new Ajv();
 
 // Load schema and data
 const schema = ...;

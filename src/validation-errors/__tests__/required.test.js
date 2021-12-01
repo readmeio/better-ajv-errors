@@ -1,4 +1,4 @@
-import parse from 'json-to-ast';
+import { parse } from '@humanwhocodes/momoa';
 import { getSchemaAndData } from '../../test-helpers';
 import RequiredValidationError from '../required';
 
@@ -9,7 +9,7 @@ describe('Required', () => {
   ])('%s', async (_, colorize) => {
     const [schema, data] = await getSchemaAndData('required', __dirname);
     const jsonRaw = JSON.stringify(data, null, 2);
-    const jsonAst = parse(jsonRaw, { loc: true });
+    const jsonAst = parse(jsonRaw);
 
     const error = new RequiredValidationError(
       {
