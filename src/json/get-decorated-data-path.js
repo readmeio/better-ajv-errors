@@ -1,10 +1,10 @@
 import { getPointers } from './utils';
 
 function getTypeName(obj) {
-  if (!obj || !obj.children) {
+  if (!obj || !obj.elements) {
     return '';
   }
-  const type = obj.children.filter(child => child && child.key && child.key.value === 'type');
+  const type = obj.elements.filter(child => child && child.name && child.name.value === 'type');
 
   if (!type.length) {
     return '';
@@ -35,17 +35,4 @@ export default function getDecoratedDataPath(jsonAst, dataPath) {
     }
   }, jsonAst.body);
   return decoratedPath;
-}
-
-function getTypeName(obj) {
-  if (!obj || !obj.elements) {
-    return '';
-  }
-  const type = obj.elements.filter(child => child && child.name && child.name.value === 'type');
-
-  if (!type.length) {
-    return '';
-  }
-
-  return (type[0].value && `:${type[0].value.value}`) || '';
 }
