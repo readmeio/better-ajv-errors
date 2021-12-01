@@ -24,8 +24,6 @@ Main goal of this library is to provide relevant error messages like the followi
 
 ```bash
 $ npm i better-ajv-errors
-$ # Or
-$ yarn add better-ajv-errors
 ```
 
 Also make sure that you installed [ajv](https://www.npmjs.com/package/ajv) package to validate data against JSON schemas.
@@ -38,9 +36,7 @@ First, you need to validate your payload with `ajv`. If it's invalid then you ca
 import Ajv from 'ajv';
 import betterAjvErrors from 'better-ajv-errors';
 // const Ajv = require('ajv');
-// const betterAjvErrors = require('better-ajv-errors').default;
-// Or
-// const { default: betterAjvErrors } = require('better-ajv-errors');
+// const betterAjvErrors = require('better-ajv-errors');
 
 // You need to pass `{ jsonPointers: true }` for older versions of ajv
 const ajv = new Ajv();

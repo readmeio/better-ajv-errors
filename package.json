@@ -8,6 +8,7 @@
   "typings": "typings.d.ts",
   "files": [
     "lib",
+    "index.js",
     "typings.d.ts"
   ],
   "engines": {
