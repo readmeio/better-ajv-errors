@@ -1,4 +1,4 @@
-import Ajv from 'ajv';
+import Ajv from 'ajv/dist/2020';
 import betterAjvErrors from '../..';
 import { getSchemaAndData } from '../../test-helpers';
 
@@ -33,6 +33,20 @@ describe('Main', () => {
 
   it('should support js output format for additionalProperties errors', async () => {
     const [schema, data] = await getSchemaAndData('additionalProperties', __dirname);
+
+    const ajv = new Ajv();
+    const validate = ajv.compile(schema);
+    const valid = validate(data);
+    expect(valid).toBe(false);
+
+    const res = betterAjvErrors(schema, data, validate.errors, {
+      format: 'js',
+    });
+    expect(res).toMatchSnapshot();
+  });
+
+  it('should support js output format for unevaluatedProperties errors', async () => {
+    const [schema, data] = await getSchemaAndData('unevaluatedProperties', __dirname);
 
     const ajv = new Ajv();
     const validate = ajv.compile(schema);

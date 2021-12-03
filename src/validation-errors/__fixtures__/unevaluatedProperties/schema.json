@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "properties": {
+    "foo": { "type": "string" },
+    "bar": { "type": "number" }
+  },
+  "required": ["foo", "bar"],
+  "unevaluatedProperties": false
+}

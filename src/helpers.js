@@ -14,6 +14,7 @@ import {
   RequiredValidationError,
   EnumValidationError,
   DefaultValidationError,
+  UnevaluatedPropValidationError,
 } from './validation-errors';
 
 // eslint-disable-next-line unicorn/no-unsafe-regex
@@ -111,6 +112,8 @@ export function createErrorInstances(root, options) {
           return ret.concat(new AdditionalPropValidationError(error, options));
         case 'required':
           return ret.concat(new RequiredValidationError(error, options));
+        case 'unevaluatedProperties':
+          return ret.concat(new UnevaluatedPropValidationError(error, options));
         default:
           return ret.concat(new DefaultValidationError(error, options));
       }
