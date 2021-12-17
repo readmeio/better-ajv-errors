@@ -11,9 +11,10 @@ import {
 } from './utils';
 import {
   AdditionalPropValidationError,
-  RequiredValidationError,
-  EnumValidationError,
   DefaultValidationError,
+  EnumValidationError,
+  PatternValidationError,
+  RequiredValidationError,
   UnevaluatedPropValidationError,
 } from './validation-errors';
 
@@ -110,6 +111,8 @@ export function createErrorInstances(root, options) {
       switch (error.keyword) {
         case 'additionalProperties':
           return ret.concat(new AdditionalPropValidationError(error, options));
+        case 'pattern':
+          return ret.concat(new PatternValidationError(error, options));
         case 'required':
           return ret.concat(new RequiredValidationError(error, options));
         case 'unevaluatedProperties':
