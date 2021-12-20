@@ -1,0 +1,32 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Security scheme component with spaces in it",
+    "version": "v1.0.0"
+  },
+  "security": [
+    {
+      "Basic Access Authentication": ["read", "write"]
+    }
+  ],
+  "paths": {
+    "/": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "Basic Access Authentication": {
+        "type": "apiKey",
+        "name": "API-TOKEN",
+        "in": "header"
+      }
+    }
+  }
+}

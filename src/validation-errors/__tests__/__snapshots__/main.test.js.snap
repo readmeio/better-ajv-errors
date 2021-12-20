@@ -54,6 +54,35 @@ Array [
 ]
 `;
 
+exports[`Main should support js output format for patternProperties errors 1`] = `
+Array [
+  Object {
+    "end": Object {
+      "column": 261,
+      "line": 1,
+      "offset": 260,
+    },
+    "error": "/components/securitySchemes Property \\"Basic Access Authentication\\" must match pattern ^[a-zA-Z0-9._-]+$",
+    "path": "/components/securitySchemes",
+    "start": Object {
+      "column": 244,
+      "line": 1,
+      "offset": 243,
+    },
+  },
+  Object {
+    "end": undefined,
+    "error": "/components/securitySchemes: propertyNames property name must be valid",
+    "path": "/components/securitySchemes",
+    "start": Object {
+      "column": 262,
+      "line": 1,
+      "offset": 261,
+    },
+  },
+]
+`;
+
 exports[`Main should support js output format for required errors 1`] = `
 Array [
   Object {
