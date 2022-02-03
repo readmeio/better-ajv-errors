@@ -3,6 +3,7 @@ import { codeFrameColumns } from '@babel/code-frame';
 import { getMetaFromPath, getDecoratedDataPath } from '../json';
 
 export default class BaseValidationError {
+  // eslint-disable-next-line default-param-last
   constructor(options = { isIdentifierLocation: false }, { colorize, data, schema, jsonAst, jsonRaw }) {
     this.options = options;
     this.colorize = !!(!!colorize || colorize === undefined);

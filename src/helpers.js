@@ -124,8 +124,8 @@ export function createErrorInstances(root, options) {
   )(getChildren(root).map(child => createErrorInstances(child, options)));
 }
 
-export default (ajvErrors, options) => {
+export default function prettify(ajvErrors, options) {
   const tree = makeTree(ajvErrors || []);
   filterRedundantErrors(tree);
   return createErrorInstances(tree, options);
-};
+}

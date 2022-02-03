@@ -1,7 +1,7 @@
 import { parse } from '@humanwhocodes/momoa';
 import prettify from './helpers';
 
-export default (schema, data, errors, options = {}) => {
+export default function betterAjvErrors(schema, data, errors, options = {}) {
   const { colorize = true, format = 'cli', indent = null, json = null } = options;
 
   const jsonRaw = json || JSON.stringify(data, null, indent);
@@ -22,4 +22,4 @@ export default (schema, data, errors, options = {}) => {
   }
 
   return customErrors.map(customErrorToStructure);
-};
+}
