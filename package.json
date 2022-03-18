@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "@babel/code-frame": "^7.16.0",
+    "@babel/runtime": "^7.17.7",
     "@humanwhocodes/momoa": "^2.0.3",
     "chalk": "^4.1.2",
     "json-to-ast": "^2.0.3",
@@ -52,7 +53,6 @@
     "@babel/core": "^7.17.7",
     "@babel/plugin-transform-runtime": "^7.17.0",
     "@babel/preset-env": "^7.16.0",
-    "@babel/runtime": "^7.17.7",
     "@readme/eslint-config": "^8.5.1",
     "ajv": "^8.10.0",
     "babel-jest": "^27.5.1",
