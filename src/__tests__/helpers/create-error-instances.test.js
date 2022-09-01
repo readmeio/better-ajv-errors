@@ -24,17 +24,17 @@ describe('createErrorInstances', () => {
     );
 
     expect(errors).toMatchInlineSnapshot(`
-      Array [
+      [
         EnumValidationError {
           "colorize": true,
           "data": undefined,
           "jsonAst": undefined,
           "jsonRaw": undefined,
           "name": "EnumValidationError",
-          "options": Object {
+          "options": {
             "keyword": "enum",
-            "params": Object {
-              "allowedValues": Array [
+            "params": {
+              "allowedValues": [
                 "one",
                 "two",
                 "three",
