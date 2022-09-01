@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Main should support js output format for additionalProperties errors 1`] = `
-Array [
-  Object {
-    "end": Object {
+[
+  {
+    "end": {
       "column": 27,
       "line": 1,
       "offset": 26,
     },
     "error": " Property baz is not expected to be here",
     "path": "",
-    "start": Object {
+    "start": {
       "column": 22,
       "line": 1,
       "offset": 21,
@@ -20,12 +20,12 @@ Array [
 `;
 
 exports[`Main should support js output format for default errors 1`] = `
-Array [
-  Object {
+[
+  {
     "end": undefined,
     "error": "/id: type must be number",
     "path": "/id",
-    "start": Object {
+    "start": {
       "column": 7,
       "line": 1,
       "offset": 6,
@@ -35,16 +35,16 @@ Array [
 `;
 
 exports[`Main should support js output format for enum errors 1`] = `
-Array [
-  Object {
-    "end": Object {
+[
+  {
+    "end": {
       "column": 12,
       "line": 1,
       "offset": 11,
     },
     "error": "/id must be equal to one of the allowed values: foo, bar",
     "path": "/id",
-    "start": Object {
+    "start": {
       "column": 7,
       "line": 1,
       "offset": 6,
@@ -55,26 +55,26 @@ Array [
 `;
 
 exports[`Main should support js output format for patternProperties errors 1`] = `
-Array [
-  Object {
-    "end": Object {
+[
+  {
+    "end": {
       "column": 261,
       "line": 1,
       "offset": 260,
     },
-    "error": "/components/securitySchemes Property \\"Basic Access Authentication\\" must match pattern ^[a-zA-Z0-9._-]+$",
+    "error": "/components/securitySchemes Property "Basic Access Authentication" must match pattern ^[a-zA-Z0-9._-]+$",
     "path": "/components/securitySchemes",
-    "start": Object {
+    "start": {
       "column": 244,
       "line": 1,
       "offset": 243,
     },
   },
-  Object {
+  {
     "end": undefined,
     "error": "/components/securitySchemes: propertyNames property name must be valid",
     "path": "/components/securitySchemes",
-    "start": Object {
+    "start": {
       "column": 262,
       "line": 1,
       "offset": 261,
@@ -84,11 +84,11 @@ Array [
 `;
 
 exports[`Main should support js output format for required errors 1`] = `
-Array [
-  Object {
+[
+  {
     "error": "/nested must have required property 'id'",
     "path": "/nested",
-    "start": Object {
+    "start": {
       "column": 11,
       "line": 1,
       "offset": 10,
@@ -98,16 +98,16 @@ Array [
 `;
 
 exports[`Main should support js output format for unevaluatedProperties errors 1`] = `
-Array [
-  Object {
-    "end": Object {
+[
+  {
+    "end": {
       "column": 27,
       "line": 1,
       "offset": 26,
     },
     "error": " Property baz is not expected to be here",
     "path": "",
-    "start": Object {
+    "start": {
       "column": 22,
       "line": 1,
       "offset": 21,
