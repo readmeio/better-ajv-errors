@@ -1,6 +1,8 @@
 import { readFileSync } from 'fs';
+
 import { parse } from '@humanwhocodes/momoa';
 import { getFixturePath } from 'jest-fixtures';
+
 import { getMetaFromPath, getDecoratedDataPath } from '..';
 
 async function loadScenario(n) {

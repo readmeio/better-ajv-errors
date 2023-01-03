@@ -1,9 +1,10 @@
+import { openapi } from '@apidevtools/openapi-schemas';
 import Ajv from 'ajv';
 import Ajv2020 from 'ajv/dist/2020';
-import { getSchemaAndData } from '../test-helpers';
+
 import betterAjvErrors from '..';
 import betterAjvErrorsBabelExport from '../../lib';
-import { openapi } from '@apidevtools/openapi-schemas';
+import { getSchemaAndData } from '../test-helpers';
 
 describe('Main', () => {
   it.each([

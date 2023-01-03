@@ -1,4 +1,5 @@
 import { parse } from '@humanwhocodes/momoa';
+
 import { getSchemaAndData } from '../../test-helpers';
 import EnumValidationError from '../enum';
 
@@ -25,7 +26,7 @@ describe('Enum', () => {
           dataPath: '/id',
           schemaPath: '#/enum',
           params: { allowedValues: ['foo', 'bar'] },
-          message: `should be equal to one of the allowed values`,
+          message: 'should be equal to one of the allowed values',
         },
         { colorize, data, schema, jsonRaw, jsonAst }
       );
@@ -43,7 +44,7 @@ describe('Enum', () => {
           dataPath: '/id',
           schemaPath: '#/enum',
           params: { allowedValues: ['one', 'two'] },
-          message: `should be equal to one of the allowed values`,
+          message: 'should be equal to one of the allowed values',
         },
         { colorize, data, schema, jsonRaw, jsonAst }
       );
@@ -61,7 +62,7 @@ describe('Enum', () => {
           dataPath: '/id',
           schemaPath: '#/enum',
           params: { allowedValues: ['foo', 'bar'] },
-          message: `should be equal to one of the allowed values`,
+          message: 'should be equal to one of the allowed values',
         },
         { colorize, data, schema, jsonRaw, jsonAst }
       );

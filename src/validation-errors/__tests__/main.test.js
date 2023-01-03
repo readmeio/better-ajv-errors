@@ -1,7 +1,8 @@
+import { openapi } from '@apidevtools/openapi-schemas';
 import Ajv from 'ajv/dist/2020';
+
 import betterAjvErrors from '../..';
 import { getSchemaAndData } from '../../test-helpers';
-import { openapi } from '@apidevtools/openapi-schemas';
 
 describe('Main', () => {
   it('should support js output format for default errors', async () => {

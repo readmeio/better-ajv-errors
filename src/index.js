@@ -1,4 +1,5 @@
 import { parse } from '@humanwhocodes/momoa';
+
 import prettify from './helpers';
 
 export default function betterAjvErrors(schema, data, errors, options = {}) {

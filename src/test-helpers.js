@@ -1,4 +1,5 @@
 import { readFileSync } from 'fs';
+
 import { getFixturePath } from 'jest-fixtures';
 
 export async function getSchemaAndData(name, dirPath) {

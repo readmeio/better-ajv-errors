@@ -1,4 +1,5 @@
 import { parse } from '@humanwhocodes/momoa';
+
 import { getSchemaAndData } from '../../test-helpers';
 import RequiredValidationError from '../required';
 
@@ -17,7 +18,7 @@ describe('Required', () => {
         dataPath: '/nested',
         schemaPath: '#/required',
         params: { missingProperty: 'id' },
-        message: `should have required property 'id'`,
+        message: "should have required property 'id'",
       },
       { colorize, data, schema, jsonRaw, jsonAst }
     );

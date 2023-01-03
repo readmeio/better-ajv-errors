@@ -1,5 +1,6 @@
-import leven from 'leven';
 import pointer from 'jsonpointer';
+import leven from 'leven';
+
 import BaseValidationError from './base';
 
 export default class EnumValidationError extends BaseValidationError {
