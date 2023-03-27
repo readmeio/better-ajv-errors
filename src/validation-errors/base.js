@@ -33,7 +33,19 @@ export default class BaseValidationError {
 
   getCodeFrame(message, dataPath = this.instancePath) {
     return codeFrameColumns(this.jsonRaw, this.getLocation(dataPath), {
-      highlightCode: this.colorize,
+      /**
+       * `@babel/highlight`, by way of `@babel/code-frame`, highlights out entire block of raw JSON
+       * instead of just our `location` block -- so if you have a block of raw JSON that's upwards
+       * of 2mb+ and have a lot of errors to generate code frames for then we're re-highlighting
+       * the same huge chunk of code over and over and over and over again, all just so
+       * `@babel/code-frame` will eventually extract a small <10 line chunk out of it to return to
+       * us.
+       *
+       * Disabling `highlightCode` here will only disable highlighting the code we're showing users;
+       * if `options.colorize` is supplied to this library then the error message we're adding will
+       * still be highlighted.
+       */
+      highlightCode: false,
       message,
     });
   }
