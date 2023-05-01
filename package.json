@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@babel/code-frame": "^7.21.4",
-    "@babel/runtime": "^7.21.0",
+    "@babel/runtime": "^7.21.5",
     "@humanwhocodes/momoa": "^2.0.3",
     "chalk": "^4.1.2",
     "json-to-ast": "^2.0.3",
@@ -49,19 +49,19 @@
   },
   "devDependencies": {
     "@apidevtools/openapi-schemas": "^2.1.0",
-    "@babel/cli": "^7.21.0",
-    "@babel/core": "^7.21.4",
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.5",
     "@babel/plugin-transform-runtime": "^7.21.4",
-    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-env": "^7.21.5",
     "@readme/eslint-config": "^10.5.2",
     "ajv": "^8.12.0",
     "babel-jest": "^29.5.0",
     "babel-plugin-add-module-exports": "^1.0.4",
-    "eslint": "^8.37.0",
+    "eslint": "^8.39.0",
     "husky": "^8.0.3",
     "jest": "^29.5.0",
     "jest-fixtures": "^0.6.0",
-    "prettier": "^2.8.7",
+    "prettier": "^2.8.8",
     "pretty-quick": "^3.1.1"
   },
   "peerDependencies": {
