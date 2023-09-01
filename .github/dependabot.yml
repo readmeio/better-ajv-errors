@@ -26,6 +26,11 @@ updates:
     labels:
       - dependencies
     groups:
+      minor-production-deps:
+        dependency-type: 'production'
+        update-types:
+          - minor
+          - patch
       minor-development-deps:
         dependency-type: 'development'
         update-types:
