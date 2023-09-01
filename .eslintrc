@@ -1,8 +1,5 @@
 {
-  "extends": [
-    "@readme/eslint-config",
-    "@readme/eslint-config/testing"
-  ],
+  "extends": "@readme/eslint-config",
   "root": true,
   "rules": {
     "array-callback-return": "off",

@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Main should support js output format for additionalProperties errors 1`] = `
+exports[`Main > should support js output format for additionalProperties errors 1`] = `
 [
   {
     "end": {
@@ -19,7 +19,7 @@ exports[`Main should support js output format for additionalProperties errors 1`
 ]
 `;
 
-exports[`Main should support js output format for default errors 1`] = `
+exports[`Main > should support js output format for default errors 1`] = `
 [
   {
     "end": undefined,
@@ -34,7 +34,7 @@ exports[`Main should support js output format for default errors 1`] = `
 ]
 `;
 
-exports[`Main should support js output format for enum errors 1`] = `
+exports[`Main > should support js output format for enum errors 1`] = `
 [
   {
     "end": {
@@ -54,7 +54,7 @@ exports[`Main should support js output format for enum errors 1`] = `
 ]
 `;
 
-exports[`Main should support js output format for patternProperties errors 1`] = `
+exports[`Main > should support js output format for patternProperties errors 1`] = `
 [
   {
     "end": {
@@ -62,7 +62,7 @@ exports[`Main should support js output format for patternProperties errors 1`] =
       "line": 1,
       "offset": 260,
     },
-    "error": "/components/securitySchemes Property "Basic Access Authentication" must match pattern ^[a-zA-Z0-9._-]+$",
+    "error": "/components/securitySchemes Property \\"Basic Access Authentication\\" must match pattern ^[a-zA-Z0-9._-]+$",
     "path": "/components/securitySchemes",
     "start": {
       "column": 244,
@@ -83,7 +83,7 @@ exports[`Main should support js output format for patternProperties errors 1`] =
 ]
 `;
 
-exports[`Main should support js output format for required errors 1`] = `
+exports[`Main > should support js output format for required errors 1`] = `
 [
   {
     "error": "/nested must have required property 'id'",
@@ -97,7 +97,7 @@ exports[`Main should support js output format for required errors 1`] = `
 ]
 `;
 
-exports[`Main should support js output format for unevaluatedProperties errors 1`] = `
+exports[`Main > should support js output format for unevaluatedProperties errors 1`] = `
 [
   {
     "end": {

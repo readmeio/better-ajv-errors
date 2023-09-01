@@ -1,4 +1,5 @@
 import { parse } from '@humanwhocodes/momoa';
+import { describe, it, expect } from 'vitest';
 
 import { getSchemaAndData } from '../../test-helpers';
 import RequiredValidationError from '../required';
@@ -20,7 +21,7 @@ describe('Required', () => {
         params: { missingProperty: 'id' },
         message: "should have required property 'id'",
       },
-      { colorize, data, schema, jsonRaw, jsonAst }
+      { colorize, data, schema, jsonRaw, jsonAst },
     );
 
     expect(error.print()).toMatchSnapshot();

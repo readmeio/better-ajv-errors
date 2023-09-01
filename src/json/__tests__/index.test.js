@@ -1,12 +1,13 @@
 import { readFileSync } from 'fs';
+import path from 'path';
 
 import { parse } from '@humanwhocodes/momoa';
-import { getFixturePath } from 'jest-fixtures';
+import { describe, it, expect } from 'vitest';
 
 import { getMetaFromPath, getDecoratedDataPath } from '..';
 
 async function loadScenario(n) {
-  const fixturePath = await getFixturePath(__dirname, `scenario-${n}.json`);
+  const fixturePath = path.join(__dirname, '..', '__fixtures__', `scenario-${n}.json`);
   return parse(readFileSync(fixturePath, 'utf8'));
 }
 

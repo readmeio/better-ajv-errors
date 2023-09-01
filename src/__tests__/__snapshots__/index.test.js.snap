@@ -1,57 +1,57 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Main Babel export should function as normal 1`] = `
+exports[`Main > Babel export > should function as normal 1`] = `
 "[31m[1mENUM[22m[39m[31m must be equal to one of the allowed values[39m
 [31m(paragraph, codeBlock, blockquote)[39m
 
-> 1 | {"type":"doc","version":1,"content":[{"type":"paragarph"}]}
+> 1 | {\\"type\\":\\"doc\\",\\"version\\":1,\\"content\\":[{\\"type\\":\\"paragarph\\"}]}
     |                                              ^^^^^^^^^^^ 👈🏽  Did you mean [95mparagraph[39m here?"
 `;
 
-exports[`Main complex schema examples should output an error on an invalid OpenAPI 3.1 definition 1`] = `
+exports[`Main > complex schema examples > should output an error on an invalid OpenAPI 3.1 definition 1`] = `
 "[31m[1mUNEVALUATED PROPERTY[22m[39m[31m must NOT have unevaluated properties[39m
 
-  15 |         "summary": "Example operation",
-  16 |         "description": "This operation has \`tags\` typod.",
-> 17 |         "tagss": [
+  15 |         \\"summary\\": \\"Example operation\\",
+  16 |         \\"description\\": \\"This operation has \`tags\` typod.\\",
+> 17 |         \\"tagss\\": [
      |         ^^^^^^^ 😲  [95mtagss[39m is not expected to be here!
-  18 |           "Tag Name"
+  18 |           \\"Tag Name\\"
   19 |         ],
-  20 |         "responses": {"
+  20 |         \\"responses\\": {"
 `;
 
-exports[`Main should output error with codeframe 1`] = `
+exports[`Main > should output error with codeframe 1`] = `
 "[31m[1mENUM[22m[39m[31m must be equal to one of the allowed values[39m
 [31m(paragraph, codeBlock, blockquote)[39m
 
-  2 |   "type": "doc",
-  3 |   "version": 1,
-> 4 |   "content": [{ "type": "paragarph" }]
+  2 |   \\"type\\": \\"doc\\",
+  3 |   \\"version\\": 1,
+> 4 |   \\"content\\": [{ \\"type\\": \\"paragarph\\" }]
     |                         ^^^^^^^^^^^ 👈🏽  Did you mean [95mparagraph[39m here?
   5 | }
   6 |"
 `;
 
-exports[`Main should output error with reconstructed codeframe [without colors] 1`] = `
+exports[`Main > should output error with reconstructed codeframe [without colors] 1`] = `
 "ENUM must be equal to one of the allowed values
 (paragraph, codeBlock, blockquote)
 
-  4 |   "content": [
+  4 |   \\"content\\": [
   5 |     {
-> 6 |       "type": "paragarph"
+> 6 |       \\"type\\": \\"paragarph\\"
     |               ^^^^^^^^^^^ 👈🏽  Did you mean paragraph here?
   7 |     }
   8 |   ]
   9 | }"
 `;
 
-exports[`Main should output error with reconstructed codeframe 1`] = `
+exports[`Main > should output error with reconstructed codeframe 1`] = `
 "[31m[1mENUM[22m[39m[31m must be equal to one of the allowed values[39m
 [31m(paragraph, codeBlock, blockquote)[39m
 
-  4 |   "content": [
+  4 |   \\"content\\": [
   5 |     {
-> 6 |       "type": "paragarph"
+> 6 |       \\"type\\": \\"paragarph\\"
     |               ^^^^^^^^^^^ 👈🏽  Did you mean [95mparagraph[39m here?
   7 |     }
   8 |   ]

@@ -35,8 +35,7 @@
     "prerelease": "npm run build",
     "pretest": "npm run lint",
     "prettier": "prettier --list-different --write \"./**/**.js\"",
-    "test": "jest --coverage",
-    "test-ci": "jest --coverage --colors"
+    "test": "vitest --coverage"
   },
   "dependencies": {
     "@babel/code-frame": "^7.22.5",
@@ -53,27 +52,16 @@
     "@babel/core": "^7.22.5",
     "@babel/plugin-transform-runtime": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
-    "@readme/eslint-config": "^10.6.1",
+    "@readme/eslint-config": "^12.2.0",
+    "@vitest/coverage-v8": "^0.34.3",
     "ajv": "^8.12.0",
-    "babel-jest": "^29.5.0",
     "babel-plugin-add-module-exports": "^1.0.4",
     "eslint": "^8.44.0",
-    "husky": "^8.0.3",
-    "jest": "^29.5.0",
-    "jest-fixtures": "^0.6.0",
-    "prettier": "^2.8.8",
-    "pretty-quick": "^3.1.1"
+    "prettier": "^3.0.3",
+    "vitest": "^0.34.3"
   },
   "peerDependencies": {
     "ajv": "4.11.8 - 8"
   },
-  "prettier": "@readme/eslint-config/prettier",
-  "jest": {
-    "coveragePathIgnorePatterns": [
-      "lib/"
-    ],
-    "testMatch": [
-      "<rootDir>/src/**/__tests__/**/*.test.js"
-    ]
-  }
+  "prettier": "@readme/eslint-config/prettier"
 }
