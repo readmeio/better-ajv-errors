@@ -41,7 +41,7 @@
   "dependencies": {
     "@babel/code-frame": "^7.22.5",
     "@babel/runtime": "^7.22.5",
-    "@humanwhocodes/momoa": "^2.0.3",
+    "@humanwhocodes/momoa": "^3.0.6",
     "chalk": "^4.1.2",
     "json-to-ast": "^2.0.3",
     "jsonpointer": "^5.0.0",
