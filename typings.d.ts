@@ -1,10 +1,10 @@
 import type { ErrorObject } from 'ajv';
 
 export interface IOutputError {
-  start: { line: number; column: number; offset: number };
   // Optional for required
-  end?: { line: number; column: number; offset: number };
+  end?: { column: number; line: number; offset: number };
   error: string;
+  start: { column: number; line: number; offset: number };
   suggestion?: string;
 }
 
@@ -19,6 +19,6 @@ export interface IInputOptions {
 export default function <S, T, Options extends IInputOptions>(
   schema: S,
   data: T,
-  errors: Array<ErrorObject>,
-  options?: Options
-): Options extends { format: 'js' } ? Array<IOutputError> : string;
+  errors: ErrorObject[],
+  options?: Options,
+): Options extends { format: 'js' } ? IOutputError[] : string;
