@@ -1,4 +1,5 @@
 import { parse } from '@humanwhocodes/momoa';
+import { beforeAll, describe, expect, it } from 'vitest';
 
 import { getSchemaAndData } from '../../test-helpers';
 import EnumValidationError from '../enum';
@@ -28,7 +29,7 @@ describe('Enum', () => {
           params: { allowedValues: ['foo', 'bar'] },
           message: 'should be equal to one of the allowed values',
         },
-        { colorize, data, schema, jsonRaw, jsonAst }
+        { colorize, data, schema, jsonRaw, jsonAst },
       );
 
       expect(error.print()).toMatchSnapshot();
@@ -46,7 +47,7 @@ describe('Enum', () => {
           params: { allowedValues: ['one', 'two'] },
           message: 'should be equal to one of the allowed values',
         },
-        { colorize, data, schema, jsonRaw, jsonAst }
+        { colorize, data, schema, jsonRaw, jsonAst },
       );
 
       expect(error.print()).toMatchSnapshot();
@@ -64,7 +65,7 @@ describe('Enum', () => {
           params: { allowedValues: ['foo', 'bar'] },
           message: 'should be equal to one of the allowed values',
         },
-        { colorize, data, schema, jsonRaw, jsonAst }
+        { colorize, data, schema, jsonRaw, jsonAst },
       );
 
       expect(error.print(schema, { id: '' })).toMatchSnapshot();
@@ -97,7 +98,7 @@ describe('Enum', () => {
           },
           message: 'should be equal to one of the allowed values',
         },
-        { colorize, data, schema, jsonRaw, jsonAst }
+        { colorize, data, schema, jsonRaw, jsonAst },
       );
 
       expect(error.print()).toMatchSnapshot();
@@ -117,7 +118,7 @@ describe('Enum', () => {
           },
           message: 'should be equal to one of the allowed values',
         },
-        { colorize, data, schema, jsonRaw, jsonAst }
+        { colorize, data, schema, jsonRaw, jsonAst },
       );
 
       expect(error.print()).toMatchSnapshot();
@@ -137,7 +138,7 @@ describe('Enum', () => {
           },
           message: 'should be equal to one of the allowed values',
         },
-        { colorize, data, schema, jsonRaw, jsonAst }
+        { colorize, data, schema, jsonRaw, jsonAst },
       );
 
       expect(error.print(schema, '')).toMatchSnapshot();

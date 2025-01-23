@@ -15,8 +15,8 @@ export default class UnevaluatedPropValidationError extends BaseValidationError 
     return output.concat(
       this.getCodeFrame(
         chalk`😲  {magentaBright ${params.unevaluatedProperty}} is not expected to be here!`,
-        `${this.instancePath}/${params.unevaluatedProperty}`
-      )
+        `${this.instancePath}/${params.unevaluatedProperty}`,
+      ),
     );
   }
 

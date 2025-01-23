@@ -1,6 +1,7 @@
 import { openapi } from '@apidevtools/openapi-schemas';
 import Ajv from 'ajv';
 import Ajv2020 from 'ajv/dist/2020';
+import { describe, it, expect } from 'vitest';
 
 import betterAjvErrors from '..';
 import betterAjvErrorsBabelExport from '../../lib';

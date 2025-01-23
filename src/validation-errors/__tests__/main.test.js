@@ -1,5 +1,6 @@
 import { openapi } from '@apidevtools/openapi-schemas';
 import Ajv from 'ajv/dist/2020';
+import { describe, expect, it } from 'vitest';
 
 import betterAjvErrors from '../..';
 import { getSchemaAndData } from '../../test-helpers';

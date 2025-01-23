@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Enum when value is a primitive prints correctly for empty value [without colors] 1`] = `
+exports[`Enum > when value is a primitive > prints correctly for empty value [without colors] 1`] = `
 [
   "ENUM should be equal to one of the allowed values",
   "(foo, bar)
@@ -10,7 +10,7 @@ exports[`Enum when value is a primitive prints correctly for empty value [withou
 ]
 `;
 
-exports[`Enum when value is a primitive prints correctly for empty value 1`] = `
+exports[`Enum > when value is a primitive > prints correctly for empty value 1`] = `
 [
   "[31m[1mENUM[22m[39m[31m should be equal to one of the allowed values[39m",
   "[31m(foo, bar)[39m
@@ -20,7 +20,7 @@ exports[`Enum when value is a primitive prints correctly for empty value 1`] = `
 ]
 `;
 
-exports[`Enum when value is a primitive prints correctly for enum prop [without colors] 1`] = `
+exports[`Enum > when value is a primitive > prints correctly for enum prop [without colors] 1`] = `
 [
   "ENUM should be equal to one of the allowed values",
   "(foo, bar)
@@ -30,7 +30,7 @@ exports[`Enum when value is a primitive prints correctly for enum prop [without 
 ]
 `;
 
-exports[`Enum when value is a primitive prints correctly for enum prop 1`] = `
+exports[`Enum > when value is a primitive > prints correctly for enum prop 1`] = `
 [
   "[31m[1mENUM[22m[39m[31m should be equal to one of the allowed values[39m",
   "[31m(foo, bar)[39m
@@ -40,7 +40,7 @@ exports[`Enum when value is a primitive prints correctly for enum prop 1`] = `
 ]
 `;
 
-exports[`Enum when value is a primitive prints correctly for no levenshtein match [without colors] 1`] = `
+exports[`Enum > when value is a primitive > prints correctly for no levenshtein match [without colors] 1`] = `
 [
   "ENUM should be equal to one of the allowed values",
   "(one, two)
@@ -50,7 +50,7 @@ exports[`Enum when value is a primitive prints correctly for no levenshtein matc
 ]
 `;
 
-exports[`Enum when value is a primitive prints correctly for no levenshtein match 1`] = `
+exports[`Enum > when value is a primitive > prints correctly for no levenshtein match 1`] = `
 [
   "[31m[1mENUM[22m[39m[31m should be equal to one of the allowed values[39m",
   "[31m(one, two)[39m
@@ -60,7 +60,7 @@ exports[`Enum when value is a primitive prints correctly for no levenshtein matc
 ]
 `;
 
-exports[`Enum when value is an object prints correctly for empty value [without colors] 1`] = `
+exports[`Enum > when value is an object > prints correctly for empty value [without colors] 1`] = `
 [
   "ENUM should be equal to one of the allowed values",
   "(foo, bar)
@@ -72,7 +72,7 @@ exports[`Enum when value is an object prints correctly for empty value [without 
 ]
 `;
 
-exports[`Enum when value is an object prints correctly for empty value 1`] = `
+exports[`Enum > when value is an object > prints correctly for empty value 1`] = `
 [
   "[31m[1mENUM[22m[39m[31m should be equal to one of the allowed values[39m",
   "[31m(foo, bar)[39m
@@ -84,7 +84,7 @@ exports[`Enum when value is an object prints correctly for empty value 1`] = `
 ]
 `;
 
-exports[`Enum when value is an object prints correctly for enum prop [without colors] 1`] = `
+exports[`Enum > when value is an object > prints correctly for enum prop [without colors] 1`] = `
 [
   "ENUM should be equal to one of the allowed values",
   "(foo, bar)
@@ -96,7 +96,7 @@ exports[`Enum when value is an object prints correctly for enum prop [without co
 ]
 `;
 
-exports[`Enum when value is an object prints correctly for enum prop 1`] = `
+exports[`Enum > when value is an object > prints correctly for enum prop 1`] = `
 [
   "[31m[1mENUM[22m[39m[31m should be equal to one of the allowed values[39m",
   "[31m(foo, bar)[39m
@@ -108,7 +108,7 @@ exports[`Enum when value is an object prints correctly for enum prop 1`] = `
 ]
 `;
 
-exports[`Enum when value is an object prints correctly for no levenshtein match [without colors] 1`] = `
+exports[`Enum > when value is an object > prints correctly for no levenshtein match [without colors] 1`] = `
 [
   "ENUM should be equal to one of the allowed values",
   "(one, two)
@@ -120,7 +120,7 @@ exports[`Enum when value is an object prints correctly for no levenshtein match 
 ]
 `;
 
-exports[`Enum when value is an object prints correctly for no levenshtein match 1`] = `
+exports[`Enum > when value is an object > prints correctly for no levenshtein match 1`] = `
 [
   "[31m[1mENUM[22m[39m[31m should be equal to one of the allowed values[39m",
   "[31m(one, two)[39m

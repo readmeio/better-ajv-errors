@@ -1,12 +1,15 @@
-import { readFileSync } from 'fs';
+import fs from 'node:fs/promises';
+import path from 'node:path';
 
-import { getFixturePath } from 'jest-fixtures';
+export function getFixturePath(dir, name, file) {
+  return path.join(...[dir, '..', '__fixtures__', name, file].filter(Boolean));
+}
 
 export async function getSchemaAndData(name, dirPath) {
-  const schemaPath = await getFixturePath(dirPath, name, 'schema.json');
-  const schema = JSON.parse(readFileSync(schemaPath, 'utf8'));
-  const dataPath = await getFixturePath(dirPath, name, 'data.json');
-  const json = readFileSync(dataPath, 'utf8');
+  const schemaPath = getFixturePath(dirPath, name, 'schema.json');
+  const schema = await fs.readFile(schemaPath, 'utf8').then(JSON.parse);
+  const dataPath = getFixturePath(dirPath, name, 'data.json');
+  const json = await fs.readFile(dataPath, 'utf8');
   const data = JSON.parse(json);
 
   return [schema, data, json];

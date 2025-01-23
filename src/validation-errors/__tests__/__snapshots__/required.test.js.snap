@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Required prints correctly for missing required prop 1`] = `
+exports[`Required > prints correctly for missing required prop 1`] = `
 [
   "[31m[1mREQUIRED[22m[39m[31m should have required property 'id'[39m
 ",
@@ -11,7 +11,7 @@ exports[`Required prints correctly for missing required prop 1`] = `
 ]
 `;
 
-exports[`Required prints correctly for missing required prop[without colors] 1`] = `
+exports[`Required > prints correctly for missing required prop[without colors] 1`] = `
 [
   "REQUIRED should have required property 'id'
 ",

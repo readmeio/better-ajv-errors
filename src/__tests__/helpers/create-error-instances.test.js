@@ -1,3 +1,5 @@
+import { describe, it, expect } from 'vitest';
+
 import { createErrorInstances } from '../../helpers';
 
 describe('createErrorInstances', () => {
@@ -20,7 +22,7 @@ describe('createErrorInstances', () => {
           },
         ],
       },
-      {}
+      {},
     );
 
     expect(errors).toMatchInlineSnapshot(`
