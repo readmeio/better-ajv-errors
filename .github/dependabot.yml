@@ -41,7 +41,7 @@ updates:
       prefix-development: chore(deps-dev)
     ignore:
       # These are all now ESM-only packages.
-      - dependency-name: @humanwhocodes/momoa
+      - dependency-name: '@humanwhocodes/momoa'
         versions:
           - '>= 3'
       - dependency-name: chalk
