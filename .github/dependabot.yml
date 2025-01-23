@@ -40,11 +40,13 @@ updates:
       prefix: chore(deps)
       prefix-development: chore(deps-dev)
     ignore:
-      # chalk is now an ESM-only package.
+      # These are all now ESM-only packages.
+      - dependency-name: @humanwhocodes/momoa
+        versions:
+          - '>= 3'
       - dependency-name: chalk
         versions:
           - '>= 5'
-      # level is now an ESM-only package.
       - dependency-name: leven
         versions:
           - '>= 4'
