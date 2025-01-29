@@ -9,12 +9,12 @@ export default class PatternValidationError extends BaseValidationError {
 
   print() {
     const { message, params, propertyName } = this.options;
-    const chalk = this.getChalk();
-    const output = [chalk`{red {bold PROPERTY} ${message}}\n`];
+    const colorizer = this.getColorizer();
+    const output = [`${colorizer.red(`${colorizer.bold('PROPERTY')} ${message}`)}\n`];
 
     return output.concat(
       this.getCodeFrame(
-        chalk`😲  must match pattern {magentaBright ${params.pattern}}`,
+        `😲  must match pattern ${colorizer.magentaBright(params.pattern)}`,
         `${this.instancePath}/${propertyName}`,
       ),
     );

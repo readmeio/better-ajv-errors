@@ -14,16 +14,19 @@ export default class EnumValidationError extends BaseValidationError {
       message,
       params: { allowedValues },
     } = this.options;
-    const chalk = this.getChalk();
+    const colorizer = this.getColorizer();
     const bestMatch = this.findBestMatch();
 
-    const output = [chalk`{red {bold ENUM} ${message}}`, chalk`{red (${allowedValues.join(', ')})}\n`];
+    const output = [
+      `${colorizer.red(`${colorizer.bold('ENUM')} ${message}`)}`,
+      `${colorizer.red(`(${allowedValues.join(', ')})`)}\n`,
+    ];
 
     return output.concat(
       this.getCodeFrame(
         bestMatch !== null
-          ? chalk`👈🏽  Did you mean {magentaBright ${bestMatch}} here?`
-          : chalk`👈🏽  Unexpected value, should be equal to one of the allowed values`,
+          ? `👈🏽  Did you mean ${colorizer.magentaBright(bestMatch)} here?`
+          : '👈🏽  Unexpected value, should be equal to one of the allowed values',
       ),
     );
   }

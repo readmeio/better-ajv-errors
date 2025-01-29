@@ -9,12 +9,12 @@ export default class AdditionalPropValidationError extends BaseValidationError {
 
   print() {
     const { message, params } = this.options;
-    const chalk = this.getChalk();
-    const output = [chalk`{red {bold ADDITIONAL PROPERTY} ${message}}\n`];
+    const colorizer = this.getColorize();
+    const output = [`${colorizer.red(`${colorizer.bold('ADDITIONAL PROPERTY')} ${message}`)}\n`];
 
     return output.concat(
       this.getCodeFrame(
-        chalk`😲  {magentaBright ${params.additionalProperty}} is not expected to be here!`,
+        `😲  ${colorizer.magentaBright(params.additionalProperty)} is not expected to be here!`,
         `${this.instancePath}/${params.additionalProperty}`,
       ),
     );

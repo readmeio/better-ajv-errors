@@ -1,5 +1,5 @@
 import { codeFrameColumns } from '@babel/code-frame';
-import chalk from 'chalk';
+import pc from 'picocolors';
 
 import { getMetaFromPath, getDecoratedDataPath } from '../json';
 
@@ -14,8 +14,20 @@ export default class BaseValidationError {
     this.jsonRaw = jsonRaw;
   }
 
-  getChalk() {
-    return this.colorize ? chalk : new chalk.Instance({ level: 0 });
+  getColorizer() {
+    return this.colorize
+      ? pc
+      : // `picocolors` doesn't have a way to programatically disable the library so we're
+        // creating an empty proxy that'll just return the arguments of any color functions we
+        // invoke, sans any colorization.
+        new Proxy(
+          {},
+          {
+            get() {
+              return arg => arg;
+            },
+          },
+        );
   }
 
   getLocation(dataPath = this.instancePath) {

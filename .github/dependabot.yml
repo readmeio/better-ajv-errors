@@ -44,9 +44,6 @@ updates:
       - dependency-name: '@humanwhocodes/momoa'
         versions:
           - '>= 3'
-      - dependency-name: chalk
-        versions:
-          - '>= 5'
       - dependency-name: leven
         versions:
           - '>= 4'
