@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Main > Babel export > should function as normal 1`] = `
-"[31m[1mENUM[22m[39m[31m must be equal to one of the allowed values[39m
+"[31m[1mENUM[22m must be equal to one of the allowed values[39m
 [31m(paragraph, codeBlock, blockquote)[39m
 
 > 1 | {"type":"doc","version":1,"content":[{"type":"paragarph"}]}
@@ -9,7 +9,7 @@ exports[`Main > Babel export > should function as normal 1`] = `
 `;
 
 exports[`Main > complex schema examples > should output an error on an invalid OpenAPI 3.1 definition 1`] = `
-"[31m[1mUNEVALUATED PROPERTY[22m[39m[31m must NOT have unevaluated properties[39m
+"[31m[1mUNEVALUATED PROPERTY[22m must NOT have unevaluated properties[39m
 
   15 |         "summary": "Example operation",
   16 |         "description": "This operation has \`tags\` typod.",
@@ -21,7 +21,7 @@ exports[`Main > complex schema examples > should output an error on an invalid O
 `;
 
 exports[`Main > should output error with codeframe 1`] = `
-"[31m[1mENUM[22m[39m[31m must be equal to one of the allowed values[39m
+"[31m[1mENUM[22m must be equal to one of the allowed values[39m
 [31m(paragraph, codeBlock, blockquote)[39m
 
   2 |   "type": "doc",
@@ -46,7 +46,7 @@ exports[`Main > should output error with reconstructed codeframe [without colors
 `;
 
 exports[`Main > should output error with reconstructed codeframe 1`] = `
-"[31m[1mENUM[22m[39m[31m must be equal to one of the allowed values[39m
+"[31m[1mENUM[22m must be equal to one of the allowed values[39m
 [31m(paragraph, codeBlock, blockquote)[39m
 
   4 |   "content": [

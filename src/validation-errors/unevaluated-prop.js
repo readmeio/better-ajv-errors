@@ -9,12 +9,12 @@ export default class UnevaluatedPropValidationError extends BaseValidationError 
 
   print() {
     const { message, params } = this.options;
-    const chalk = this.getChalk();
-    const output = [chalk`{red {bold UNEVALUATED PROPERTY} ${message}}\n`];
+    const colorizer = this.getColorizer();
+    const output = [`${colorizer.red(`${colorizer.bold('UNEVALUATED PROPERTY')} ${message}`)}\n`];
 
     return output.concat(
       this.getCodeFrame(
-        chalk`😲  {magentaBright ${params.unevaluatedProperty}} is not expected to be here!`,
+        `😲  ${colorizer.magentaBright(params.unevaluatedProperty)} is not expected to be here!`,
         `${this.instancePath}/${params.unevaluatedProperty}`,
       ),
     );

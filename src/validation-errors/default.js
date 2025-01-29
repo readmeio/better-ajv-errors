@@ -9,10 +9,10 @@ export default class DefaultValidationError extends BaseValidationError {
 
   print() {
     const { keyword, message } = this.options;
-    const chalk = this.getChalk();
-    const output = [chalk`{red {bold ${keyword.toUpperCase()}} ${message}}\n`];
+    const colorizer = this.getColorizer();
+    const output = [`${colorizer.red(`${colorizer.bold(keyword.toUpperCase())} ${message}`)}\n`];
 
-    return output.concat(this.getCodeFrame(chalk`👈🏽  {magentaBright ${keyword}} ${message}`));
+    return output.concat(this.getCodeFrame(`👈🏽  ${colorizer.magentaBright(keyword)} ${message}`));
   }
 
   getError() {

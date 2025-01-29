@@ -12,7 +12,7 @@ exports[`Enum > when value is a primitive > prints correctly for empty value [wi
 
 exports[`Enum > when value is a primitive > prints correctly for empty value 1`] = `
 [
-  "[31m[1mENUM[22m[39m[31m should be equal to one of the allowed values[39m",
+  "[31m[1mENUM[22m should be equal to one of the allowed values[39m",
   "[31m(foo, bar)[39m
 ",
   "> 1 | "baz"
@@ -32,7 +32,7 @@ exports[`Enum > when value is a primitive > prints correctly for enum prop [with
 
 exports[`Enum > when value is a primitive > prints correctly for enum prop 1`] = `
 [
-  "[31m[1mENUM[22m[39m[31m should be equal to one of the allowed values[39m",
+  "[31m[1mENUM[22m should be equal to one of the allowed values[39m",
   "[31m(foo, bar)[39m
 ",
   "> 1 | "baz"
@@ -52,7 +52,7 @@ exports[`Enum > when value is a primitive > prints correctly for no levenshtein 
 
 exports[`Enum > when value is a primitive > prints correctly for no levenshtein match 1`] = `
 [
-  "[31m[1mENUM[22m[39m[31m should be equal to one of the allowed values[39m",
+  "[31m[1mENUM[22m should be equal to one of the allowed values[39m",
   "[31m(one, two)[39m
 ",
   "> 1 | "baz"
@@ -74,7 +74,7 @@ exports[`Enum > when value is an object > prints correctly for empty value [with
 
 exports[`Enum > when value is an object > prints correctly for empty value 1`] = `
 [
-  "[31m[1mENUM[22m[39m[31m should be equal to one of the allowed values[39m",
+  "[31m[1mENUM[22m should be equal to one of the allowed values[39m",
   "[31m(foo, bar)[39m
 ",
   "  1 | {
@@ -98,7 +98,7 @@ exports[`Enum > when value is an object > prints correctly for enum prop [withou
 
 exports[`Enum > when value is an object > prints correctly for enum prop 1`] = `
 [
-  "[31m[1mENUM[22m[39m[31m should be equal to one of the allowed values[39m",
+  "[31m[1mENUM[22m should be equal to one of the allowed values[39m",
   "[31m(foo, bar)[39m
 ",
   "  1 | {
@@ -122,7 +122,7 @@ exports[`Enum > when value is an object > prints correctly for no levenshtein ma
 
 exports[`Enum > when value is an object > prints correctly for no levenshtein match 1`] = `
 [
-  "[31m[1mENUM[22m[39m[31m should be equal to one of the allowed values[39m",
+  "[31m[1mENUM[22m should be equal to one of the allowed values[39m",
   "[31m(one, two)[39m
 ",
   "  1 | {

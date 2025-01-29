@@ -2,7 +2,7 @@
 
 exports[`Required > prints correctly for missing required prop 1`] = `
 [
-  "[31m[1mREQUIRED[22m[39m[31m should have required property 'id'[39m
+  "[31m[1mREQUIRED[22m should have required property 'id'[39m
 ",
   "  1 | {
 > 2 |   "nested": {}
