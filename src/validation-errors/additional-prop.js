@@ -9,7 +9,7 @@ export default class AdditionalPropValidationError extends BaseValidationError {
 
   print() {
     const { message, params } = this.options;
-    const colorizer = this.getColorize();
+    const colorizer = this.getColorizer();
     const output = [`${colorizer.red(`${colorizer.bold('ADDITIONAL PROPERTY')} ${message}`)}\n`];
 
     return output.concat(
