@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Main > Babel export > should function as normal 1`] = `
-"[31m[1mENUM[22m[39m[31m must be equal to one of the allowed values[39m
+"[31m[1mENUM[22m must be equal to one of the allowed values[39m
 [31m(paragraph, codeBlock, blockquote)[39m
 
 > 1 | {"type":"doc","version":1,"content":[{"type":"paragarph"}]}
