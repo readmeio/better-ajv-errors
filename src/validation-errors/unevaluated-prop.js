@@ -14,7 +14,7 @@ export default class UnevaluatedPropValidationError extends BaseValidationError 
 
     return output.concat(
       this.getCodeFrame(
-        `😲  ${colorizer.magentaBright(params.unevaluatedProperty)} is not expected to be here!`,
+        `${colorizer.magentaBright(params.unevaluatedProperty)} is not expected to be here!`,
         `${this.instancePath}/${params.unevaluatedProperty}`,
       ),
     );
