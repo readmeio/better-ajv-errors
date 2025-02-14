@@ -6,7 +6,7 @@ exports[`Enum > when value is a primitive > prints correctly for empty value [wi
   "(foo, bar)
 ",
   "> 1 | "baz"
-    | ^^^^^ 👈🏽  Did you mean bar here?",
+    | ^^^^^ Did you mean bar here?",
 ]
 `;
 
@@ -16,7 +16,7 @@ exports[`Enum > when value is a primitive > prints correctly for empty value 1`]
   "[31m(foo, bar)[39m
 ",
   "> 1 | "baz"
-    | ^^^^^ 👈🏽  Did you mean [95mbar[39m here?",
+    | ^^^^^ Did you mean [95mbar[39m here?",
 ]
 `;
 
@@ -26,7 +26,7 @@ exports[`Enum > when value is a primitive > prints correctly for enum prop [with
   "(foo, bar)
 ",
   "> 1 | "baz"
-    | ^^^^^ 👈🏽  Did you mean bar here?",
+    | ^^^^^ Did you mean bar here?",
 ]
 `;
 
@@ -36,7 +36,7 @@ exports[`Enum > when value is a primitive > prints correctly for enum prop 1`] =
   "[31m(foo, bar)[39m
 ",
   "> 1 | "baz"
-    | ^^^^^ 👈🏽  Did you mean [95mbar[39m here?",
+    | ^^^^^ Did you mean [95mbar[39m here?",
 ]
 `;
 
@@ -46,7 +46,7 @@ exports[`Enum > when value is a primitive > prints correctly for no levenshtein 
   "(one, two)
 ",
   "> 1 | "baz"
-    | ^^^^^ 👈🏽  Unexpected value, should be equal to one of the allowed values",
+    | ^^^^^ Unexpected value, should be equal to one of the allowed values",
 ]
 `;
 
@@ -56,7 +56,7 @@ exports[`Enum > when value is a primitive > prints correctly for no levenshtein 
   "[31m(one, two)[39m
 ",
   "> 1 | "baz"
-    | ^^^^^ 👈🏽  Unexpected value, should be equal to one of the allowed values",
+    | ^^^^^ Unexpected value, should be equal to one of the allowed values",
 ]
 `;
 
@@ -67,7 +67,7 @@ exports[`Enum > when value is an object > prints correctly for empty value [with
 ",
   "  1 | {
 > 2 |   "id": "baz"
-    |         ^^^^^ 👈🏽  Did you mean bar here?
+    |         ^^^^^ Did you mean bar here?
   3 | }",
 ]
 `;
@@ -79,7 +79,7 @@ exports[`Enum > when value is an object > prints correctly for empty value 1`] =
 ",
   "  1 | {
 > 2 |   "id": "baz"
-    |         ^^^^^ 👈🏽  Did you mean [95mbar[39m here?
+    |         ^^^^^ Did you mean [95mbar[39m here?
   3 | }",
 ]
 `;
@@ -91,7 +91,7 @@ exports[`Enum > when value is an object > prints correctly for enum prop [withou
 ",
   "  1 | {
 > 2 |   "id": "baz"
-    |         ^^^^^ 👈🏽  Did you mean bar here?
+    |         ^^^^^ Did you mean bar here?
   3 | }",
 ]
 `;
@@ -103,7 +103,7 @@ exports[`Enum > when value is an object > prints correctly for enum prop 1`] = `
 ",
   "  1 | {
 > 2 |   "id": "baz"
-    |         ^^^^^ 👈🏽  Did you mean [95mbar[39m here?
+    |         ^^^^^ Did you mean [95mbar[39m here?
   3 | }",
 ]
 `;
@@ -115,7 +115,7 @@ exports[`Enum > when value is an object > prints correctly for no levenshtein ma
 ",
   "  1 | {
 > 2 |   "id": "baz"
-    |         ^^^^^ 👈🏽  Unexpected value, should be equal to one of the allowed values
+    |         ^^^^^ Unexpected value, should be equal to one of the allowed values
   3 | }",
 ]
 `;
@@ -127,7 +127,7 @@ exports[`Enum > when value is an object > prints correctly for no levenshtein ma
 ",
   "  1 | {
 > 2 |   "id": "baz"
-    |         ^^^^^ 👈🏽  Unexpected value, should be equal to one of the allowed values
+    |         ^^^^^ Unexpected value, should be equal to one of the allowed values
   3 | }",
 ]
 `;

@@ -14,7 +14,7 @@ export default class AdditionalPropValidationError extends BaseValidationError {
 
     return output.concat(
       this.getCodeFrame(
-        `😲  ${colorizer.magentaBright(params.additionalProperty)} is not expected to be here!`,
+        `${colorizer.magentaBright(params.additionalProperty)} is not expected to be here!`,
         `${this.instancePath}/${params.additionalProperty}`,
       ),
     );

@@ -12,7 +12,7 @@ export default class DefaultValidationError extends BaseValidationError {
     const colorizer = this.getColorizer();
     const output = [`${colorizer.red(`${colorizer.bold(keyword.toUpperCase())} ${message}`)}\n`];
 
-    return output.concat(this.getCodeFrame(`👈🏽  ${colorizer.magentaBright(keyword)} ${message}`));
+    return output.concat(this.getCodeFrame(`${colorizer.magentaBright(keyword)} ${message}`));
   }
 
   getError() {

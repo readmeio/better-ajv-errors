@@ -25,8 +25,8 @@ export default class EnumValidationError extends BaseValidationError {
     return output.concat(
       this.getCodeFrame(
         bestMatch !== null
-          ? `👈🏽  Did you mean ${colorizer.magentaBright(bestMatch)} here?`
-          : '👈🏽  Unexpected value, should be equal to one of the allowed values',
+          ? `Did you mean ${colorizer.magentaBright(bestMatch)} here?`
+          : 'Unexpected value, should be equal to one of the allowed values',
       ),
     );
   }
