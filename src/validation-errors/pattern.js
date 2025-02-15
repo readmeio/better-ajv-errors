@@ -15,7 +15,7 @@ export default class PatternValidationError extends BaseValidationError {
     return output.concat(
       this.getCodeFrame(
         `must match pattern ${colorizer.magentaBright(params.pattern)}`,
-        `${this.instancePath}/${propertyName}`,
+        propertyName ? `${this.instancePath}/${propertyName}` : this.instancePath,
       ),
     );
   }

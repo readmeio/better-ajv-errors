@@ -20,6 +20,27 @@ exports[`Main > complex schema examples > should output an error on an invalid O
   20 |         "responses": {"
 `;
 
+exports[`Main > complex schema examples > should output an error on an unrecognized OpenAPI version definition 1`] = `
+"[31m[1mPROPERTY[22m must match pattern "^3\\.1\\.\\d+(-.+)?$"[39m
+
+  1 | {
+> 2 |   "openapi": "3.2.0",
+    |   ^^^^^^^^^ must match pattern [95m^3\\.1\\.\\d+(-.+)?$[39m
+  3 |   "info": {
+  4 |     "version": "1.0.0",
+  5 |     "title": "Example OpenAPI definition that will fail validation"
+
+[31m[1mUNEVALUATED PROPERTY[22m must NOT have unevaluated properties[39m
+
+  15 |         "summary": "Example operation",
+  16 |         "description": "This operation has \`tags\` typod.",
+> 17 |         "tagss": [
+     |         ^^^^^^^ [95mtagss[39m is not expected to be here!
+  18 |           "Tag Name"
+  19 |         ],
+  20 |         "responses": {"
+`;
+
 exports[`Main > should output error with codeframe 1`] = `
 "[31m[1mENUM[22m must be equal to one of the allowed values[39m
 [31m(paragraph, codeBlock, blockquote)[39m
