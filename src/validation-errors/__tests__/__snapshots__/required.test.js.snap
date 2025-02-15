@@ -6,7 +6,7 @@ exports[`Required > prints correctly for missing required prop 1`] = `
 ",
   "  1 | {
 > 2 |   "nested": {}
-    |             ^ ☹️  [95mid[39m is missing here!
+    |             ^ [95mid[39m is missing here!
   3 | }",
 ]
 `;
@@ -17,7 +17,7 @@ exports[`Required > prints correctly for missing required prop[without colors] 1
 ",
   "  1 | {
 > 2 |   "nested": {}
-    |             ^ ☹️  id is missing here!
+    |             ^ id is missing here!
   3 | }",
 ]
 `;
