@@ -8,22 +8,25 @@ import betterAjvErrorsBabelExport from '../../lib';
 import { getSchemaAndData } from '../test-helpers';
 
 describe('Main', () => {
-  it.each([
-    ['should output error with reconstructed codeframe', true],
-    ['should output error with reconstructed codeframe [without colors]', false],
-  ])('%s', async (_, colorize) => {
-    const [schema, data] = await getSchemaAndData('default', __dirname);
-    const ajv = new Ajv();
-    const validate = ajv.compile(schema);
-    const valid = validate(data);
-    expect(valid).toBe(false);
+  describe.each(['cli', 'cli-array'])('given a format of `%s`', format => {
+    it.each([
+      ['should output error with reconstructed codeframe', true],
+      ['should output error with reconstructed codeframe [without colors]', false],
+    ])('%s', async (_, colorize) => {
+      const [schema, data] = await getSchemaAndData('default', __dirname);
+      const ajv = new Ajv();
+      const validate = ajv.compile(schema);
+      const valid = validate(data);
+      expect(valid).toBe(false);
 
-    const res = betterAjvErrors(schema, data, validate.errors, {
-      colorize,
-      format: 'cli',
-      indent: 2,
+      const res = betterAjvErrors(schema, data, validate.errors, {
+        colorize,
+        format,
+        indent: 2,
+      });
+
+      expect(res).toMatchSnapshot();
     });
-    expect(res).toMatchSnapshot();
   });
 
   it('should output error with codeframe', async () => {

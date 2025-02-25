@@ -9,7 +9,7 @@ export interface IOutputError {
 }
 
 export interface IInputOptions {
-  format?: 'cli' | 'js';
+  format?: 'cli-array' | 'cli' | 'js';
   indent?: number | null;
 
   /** Raw JSON used when highlighting error location */
