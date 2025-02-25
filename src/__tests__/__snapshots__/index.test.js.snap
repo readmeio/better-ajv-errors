@@ -41,19 +41,7 @@ exports[`Main > complex schema examples > should output an error on an unrecogni
   20 |         "responses": {"
 `;
 
-exports[`Main > should output error with codeframe 1`] = `
-"[31m[1mENUM[22m must be equal to one of the allowed values[39m
-[31m(paragraph, codeBlock, blockquote)[39m
-
-  2 |   "type": "doc",
-  3 |   "version": 1,
-> 4 |   "content": [{ "type": "paragarph" }]
-    |                         ^^^^^^^^^^^ Did you mean [95mparagraph[39m here?
-  5 | }
-  6 |"
-`;
-
-exports[`Main > should output error with reconstructed codeframe [without colors] 1`] = `
+exports[`Main > given a format of \`cli\` > should output error with reconstructed codeframe [without colors] 1`] = `
 "ENUM must be equal to one of the allowed values
 (paragraph, codeBlock, blockquote)
 
@@ -66,7 +54,7 @@ exports[`Main > should output error with reconstructed codeframe [without colors
   9 | }"
 `;
 
-exports[`Main > should output error with reconstructed codeframe 1`] = `
+exports[`Main > given a format of \`cli\` > should output error with reconstructed codeframe 1`] = `
 "[31m[1mENUM[22m must be equal to one of the allowed values[39m
 [31m(paragraph, codeBlock, blockquote)[39m
 
@@ -77,4 +65,46 @@ exports[`Main > should output error with reconstructed codeframe 1`] = `
   7 |     }
   8 |   ]
   9 | }"
+`;
+
+exports[`Main > given a format of \`cli-array\` > should output error with reconstructed codeframe [without colors] 1`] = `
+[
+  "ENUM must be equal to one of the allowed values
+(paragraph, codeBlock, blockquote)
+
+  4 |   "content": [
+  5 |     {
+> 6 |       "type": "paragarph"
+    |               ^^^^^^^^^^^ Did you mean paragraph here?
+  7 |     }
+  8 |   ]
+  9 | }",
+]
+`;
+
+exports[`Main > given a format of \`cli-array\` > should output error with reconstructed codeframe 1`] = `
+[
+  "[31m[1mENUM[22m must be equal to one of the allowed values[39m
+[31m(paragraph, codeBlock, blockquote)[39m
+
+  4 |   "content": [
+  5 |     {
+> 6 |       "type": "paragarph"
+    |               ^^^^^^^^^^^ Did you mean [95mparagraph[39m here?
+  7 |     }
+  8 |   ]
+  9 | }",
+]
+`;
+
+exports[`Main > should output error with codeframe 1`] = `
+"[31m[1mENUM[22m must be equal to one of the allowed values[39m
+[31m(paragraph, codeBlock, blockquote)[39m
+
+  2 |   "type": "doc",
+  3 |   "version": 1,
+> 4 |   "content": [{ "type": "paragarph" }]
+    |                         ^^^^^^^^^^^ Did you mean [95mparagraph[39m here?
+  5 | }
+  6 |"
 `;
