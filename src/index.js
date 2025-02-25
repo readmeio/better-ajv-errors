@@ -20,7 +20,7 @@ export default function betterAjvErrors(schema, data, errors, options = {}) {
 
   if (format === 'cli') {
     return customErrors.map(customErrorToText).join('\n\n');
-  } else if (format === 'cli-array')  {
+  } else if (format === 'cli-array') {
     return customErrors.map(customErrorToText);
   }
 
