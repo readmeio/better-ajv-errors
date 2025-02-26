@@ -69,7 +69,8 @@ exports[`Main > given a format of \`cli\` > should output error with reconstruct
 
 exports[`Main > given a format of \`cli-array\` > should output error with reconstructed codeframe [without colors] 1`] = `
 [
-  "ENUM must be equal to one of the allowed values
+  {
+    "message": "ENUM must be equal to one of the allowed values
 (paragraph, codeBlock, blockquote)
 
   4 |   "content": [
@@ -79,12 +80,14 @@ exports[`Main > given a format of \`cli-array\` > should output error with recon
   7 |     }
   8 |   ]
   9 | }",
+  },
 ]
 `;
 
 exports[`Main > given a format of \`cli-array\` > should output error with reconstructed codeframe 1`] = `
 [
-  "[31m[1mENUM[22m must be equal to one of the allowed values[39m
+  {
+    "message": "[31m[1mENUM[22m must be equal to one of the allowed values[39m
 [31m(paragraph, codeBlock, blockquote)[39m
 
   4 |   "content": [
@@ -94,6 +97,7 @@ exports[`Main > given a format of \`cli-array\` > should output error with recon
   7 |     }
   8 |   ]
   9 | }",
+  },
 ]
 `;
 
