@@ -21,4 +21,8 @@ export default function <S, T, Options extends IInputOptions>(
   data: T,
   errors: ErrorObject[],
   options?: Options,
-): Options extends { format: 'js' } ? IOutputError[] : string;
+): Options extends { format: 'js' }
+  ? IOutputError[]
+  : Options extends { format: 'cli-array' }
+    ? { message: string }[]
+    : string;
