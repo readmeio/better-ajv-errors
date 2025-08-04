@@ -1,10 +1,9 @@
 import { codeFrameColumns } from '@babel/code-frame';
 import pc from 'picocolors';
 
-import { getMetaFromPath, getDecoratedDataPath } from '../json';
+import { getDecoratedDataPath, getMetaFromPath } from '../json';
 
 export default class BaseValidationError {
-  // eslint-disable-next-line default-param-last
   constructor(options = { isIdentifierLocation: false }, { colorize, data, schema, jsonAst, jsonRaw }) {
     this.options = options;
     this.colorize = !!(!!colorize || colorize === undefined);

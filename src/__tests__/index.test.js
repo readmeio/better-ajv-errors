@@ -1,10 +1,10 @@
 import { openapi } from '@readme/openapi-schemas';
 import Ajv from 'ajv';
 import Ajv2020 from 'ajv/dist/2020';
-import { describe, it, expect } from 'vitest';
+import { describe, expect, it } from 'vitest';
 
-import betterAjvErrors from '..';
 import betterAjvErrorsBabelExport from '../../lib';
+import betterAjvErrors from '..';
 import { getSchemaAndData } from '../test-helpers';
 
 describe('Main', () => {

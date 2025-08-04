@@ -1,12 +1,11 @@
-/* eslint-disable no-param-reassign */
 import {
+  concatAll,
   getChildren,
   getErrors,
   getSiblings,
   isAnyOfError,
   isEnumError,
   isRequiredError,
-  concatAll,
   notUndefined,
 } from './utils';
 import {
@@ -74,7 +73,7 @@ export function filterRedundantErrors(root, parent, key) {
    * Need explicit `root.errors` check because `[].every(fn) === true`
    * https://en.wikipedia.org/wiki/Vacuous_truth#Vacuous_truths_in_mathematics
    */
-  if (root.errors && root.errors.length && getErrors(root).every(isEnumError)) {
+  if (root?.errors?.length && getErrors(root).every(isEnumError)) {
     if (
       getSiblings(parent)(root)
         // Remove any reference which becomes `undefined` later
@@ -85,7 +84,9 @@ export function filterRedundantErrors(root, parent, key) {
     }
   }
 
-  Object.entries(root.children).forEach(([k, child]) => filterRedundantErrors(child, root, k));
+  Object.entries(root.children).forEach(([k, child]) => {
+    filterRedundantErrors(child, root, k);
+  });
 }
 
 export function createErrorInstances(root, options) {

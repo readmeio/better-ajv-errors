@@ -4,7 +4,7 @@ function getTypeName(obj) {
   if (!obj || !obj.elements) {
     return '';
   }
-  const type = obj.elements.filter(child => child && child.name && child.name.value === 'type');
+  const type = obj.elements.filter(child => child?.name?.value === 'type');
 
   if (!type.length) {
     return '';
@@ -30,7 +30,6 @@ export default function getDecoratedDataPath(jsonAst, dataPath) {
         return obj.elements[pointer];
       }
       default:
-        // eslint-disable-next-line no-console
         console.log(obj);
     }
   }, jsonAst.body);
