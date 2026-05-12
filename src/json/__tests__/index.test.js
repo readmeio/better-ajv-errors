@@ -3,8 +3,8 @@ import fs from 'node:fs/promises';
 import { parse } from '@humanwhocodes/momoa';
 import { describe, expect, it } from 'vitest';
 
-import { getFixturePath } from '../../test-helpers';
 import { getDecoratedDataPath, getMetaFromPath } from '..';
+import { getFixturePath } from '../../test-helpers';
 
 async function loadScenario(n) {
   const fixturePath = getFixturePath(__dirname, `scenario-${n}.json`);

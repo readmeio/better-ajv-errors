@@ -3,8 +3,8 @@ import Ajv from 'ajv';
 import Ajv2020 from 'ajv/dist/2020';
 import { describe, expect, it } from 'vitest';
 
-import betterAjvErrorsBabelExport from '../../lib';
 import betterAjvErrors from '..';
+import betterAjvErrorsBabelExport from '../../lib';
 import { getSchemaAndData } from '../test-helpers';
 
 describe('Main', () => {
